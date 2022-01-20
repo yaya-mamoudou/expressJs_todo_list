@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const pass = "yayamamoudou";
-const uri = `mongodb+srv://yaya:${pass}@cluster0.gdweg.mongodb.net/myTodo?retryWrites=true&w=majority`;
+const pass = "yaya0000";
+const uri = `mongodb+srv://yaya:${pass}@cluster0.d0l8h.mongodb.net/myTodo?retryWrites=true&w=majority`;
+            
 
 const connectDB = async () => {
   mongoose

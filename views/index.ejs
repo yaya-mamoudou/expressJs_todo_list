@@ -20,7 +20,7 @@
         </span>
         <ul class="list">
             <%todo.map((item)=>{%>
-                <li style="display:flex;background-color:<%=item.bg%>">
+                <li style='background-color:<%=item.bg%>; color: <%=item.color%> !important; display:flex'>
                     <input name="<%=item._id%>" id="todo<%=item._id%>" readonly type="text" style="margin-right: auto;background-color: transparent; width: fit-content;border: none;" value="<%=item.todo%>"/>
                     <button id = "<%=item._id%>" type="button" onclick="editTodo('<%=item._id%>')" class="bg-transparent p-0" >
                         <i class="fas fa-pencil-alt bg-transparent text-white"></i>

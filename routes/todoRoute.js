@@ -1,5 +1,4 @@
 const express = require("express");
-const userModel = require("../models/userModal");
 const todoModel = require("../models/todoModel");
 
 const todoRoute = express.Router();
@@ -11,10 +10,12 @@ todoRoute.post("/addTodo", async (req, res) => {
     Math.random() * 255
   )},${Math.floor(Math.random() * 255)},${(0.4 + Math.random() * 0.4).toFixed(
     2
-  )})`;
+    )})`;
+  
   req.body.bg = bg;
 
   req.body.color = "white";
+  
   try {
     todo = await new todoModel(req.body);
     await todo.save();
